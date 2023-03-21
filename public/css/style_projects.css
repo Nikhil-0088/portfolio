@@ -1,0 +1,54 @@
+/* general navbar styling  */
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+ 
+  .navbar {
+    background-color: rgba(108, 234, 108, 0.95);
+  }
+ 
+  .nav-link {
+    color: rgba(25, 33, 25, 0.95);
+  }
+ 
+  .navbar-brand {
+    color: rgba(25, 33, 25, 0.95);
+  }
+  .container-sm{
+    margin:1em 0px;
+    transition: 0.3s ease-in-out;
+  }
+  .container-sm:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  @media only screen and (max-width: 730px) {
+   .container-sm:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+   }
+  }
+  /* footer  */
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+ 
+ 
+  .footer-icons a {
+    color: yellowgreen;
+    font-size: 2em;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+ 
+  .footer-icons a:hover {
+    color: #000;
+  }
+ 
+  .copyright {
+    color: black;
+    font-size: 0.8em;
+  }
