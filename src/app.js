@@ -38,6 +38,7 @@ app.post('/contact',async(req,res)=>{
          res.status(200).render('contact',{sucess:"We recived your message we will contact you back as soon as possible!!!"})
         } catch (error) {
          res.status(400).render('contact',{sucess:"Invalid data in the form"})
+            console.log(error)
         }
      }
      else{
