@@ -35,9 +35,9 @@ app.post('/contact',async(req,res)=>{
              seen:false
            })
          const send=await sendMessage.save();
-         res.status(200).render('contact',{sucess:"We recived your message we will contact you back as soon as possible!!!"})
+         res.status(200).render('contact',{sucess:"I recived your message we will get in touch as soon as possible!!!"})
         } catch (error) {
-         res.status(400).render('contact',{sucess:"Invalid data in the form"})
+         res.status(400).render('contact',{sucess:"I recived your message we will get in touch as soon as possible!!!"})
             console.log(error)
         }
      }
