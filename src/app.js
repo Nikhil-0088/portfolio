@@ -37,7 +37,7 @@ app.post('/contact',async(req,res)=>{
          const send=await sendMessage.save();
          res.status(200).render('contact',{sucess:"I recived your message we will get in touch as soon as possible!!!"})
         } catch (error) {
-         res.status(400).render('contact',{sucess:"I recived your message we will get in touch as soon as possible!!!"})
+         res.status(400).render('contact',{sucess:"The message was not delivered due to some issue....please try after some time"})
             console.log(error)
         }
      }
